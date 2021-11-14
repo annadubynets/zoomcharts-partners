@@ -1,0 +1,370 @@
+@charset "UTF-8";
+@import "./bootstrap.min.css";
+@import "./bootstrap-select.min.css";
+@import "./owl.carousel.min.css";
+@import "fonts.css";
+.font-family-second {
+  font-family: "Merriweather";
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 60px;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 45px;
+  color: #000000;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #848484;
+}
+
+.shadow {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.02) !important;
+}
+
+.bg-linear-gradient {
+  background: linear-gradient(to right, #BF3EFE 10%, #1B9EFF 90%);
+}
+
+.bg-secondary {
+  background-color: #F1F1F1 !important;
+}
+
+.pt-116px {
+  padding-top: 116px;
+}
+
+.pb-120px {
+  padding-bottom: 120px;
+}
+
+.pb-80px {
+  padding-bottom: 80px;
+}
+
+.font-size-30px {
+  font-size: 30px !important;
+}
+
+.font-size-24px {
+  font-size: 24px !important;
+}
+
+.font-size-16px {
+  font-size: 16px !important;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-secondary {
+  color: #585858 !important;
+}
+
+.text-muted {
+  color: #848484 !important;
+}
+
+.text-dark {
+  color: #000000 !important;
+}
+
+.p-50px {
+  padding: 50px;
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+
+.rounded-pill {
+  border-radius: 40px !important;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #FCFCFC;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+.subtitle {
+  font-family: "Merriweather";
+  font-weight: 300;
+  font-size: 20px;
+  color: #878787;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-outline-primary {
+  font-weight: normal;
+  font-size: 20px;
+  color: #585858;
+  background-color: #FFFFFF;
+  border: 1px solid #1B9EFF;
+  border-radius: 25px;
+  padding: 12px 50px;
+}
+.btn-outline-primary:hover {
+  border: 1px solid #1B9EFF;
+  background-color: #1B9EFF;
+  box-shadow: 0 4px 16px 0 rgba(65, 132, 234, 0.75);
+}
+
+.btn-link {
+  font-weight: normal;
+  font-size: 20px;
+  color: #1B9EFF;
+  padding: 0;
+  text-decoration: none;
+}
+.btn-link:hover {
+  color: #5979FF;
+}
+
+.navbar {
+  padding: 23px 0;
+  background: #FFFFFF;
+}
+.navbar .navbar-brand-img {
+  height: 23px;
+}
+
+.hero {
+  background: linear-gradient(to right, #BF3EFE 10%, #1B9EFF 90%);
+  padding-top: 132px;
+}
+
+.hero-details .hero-block {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05) !important;
+  padding: 60px 126px;
+}
+.hero-details .hero-bg {
+  width: 100%;
+  min-height: 20%;
+  background: linear-gradient(to right, #BF3EFE 10%, #1B9EFF 90%);
+  position: absolute;
+  z-index: -1;
+}
+
+.testimonials .owl-carousel .item {
+  max-width: 666px;
+  width: 666px;
+}
+
+.card-bg::before {
+  content: "";
+  position: absolute;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05) !important;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  height: 85%;
+  bottom: 0;
+  z-index: -1;
+  left: 15px;
+  right: 15px;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 30px 40px 30px;
+  transition: all 0.4s ease-in-out;
+}
+.card .card-title {
+  font-weight: bold;
+  font-size: 28px;
+}
+.card .card-text {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-size: 20px;
+  color: #848484;
+}
+
+.circle-style {
+  background-color: #FFFFFF;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge {
+  font-weight: 300;
+  font-size: 18px;
+  color: #585858;
+  border-radius: 25px;
+  padding: 8px 25px;
+}
+
+.badge-featured {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 13px 40px;
+  top: -4%;
+  right: 9%;
+}
+
+.form-control {
+  font-weight: 300;
+  font-size: 20px;
+  padding: 11px 20px;
+  background-color: transparent;
+  color: #000000;
+  background: #FFFFFF;
+  border: 2px solid #EDEFF3;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+.form-control:focus {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #EDC821;
+  transition: 0.2s;
+}
+.form-control::placeholder {
+  color: #F1F1F1;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  outline: none;
+}
+
+.testimonials .owl-carousel .testimonials-nav-container .owl-prev {
+  content: "";
+  border: none;
+  background-color: transparent;
+  color: #000000;
+  font-size: 30px;
+  position: absolute;
+  top: 15%;
+  width: auto;
+  padding: 0;
+  left: -15px;
+}
+.testimonials .owl-carousel .testimonials-nav-container .owl-next {
+  content: "";
+  border: none;
+  background-color: transparent;
+  color: #000000;
+  padding: 0;
+  font-size: 30px;
+  position: absolute;
+  top: 15%;
+  right: -15px;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 45px !important;
+  }
+
+  h2 {
+    font-size: 25px !important;
+  }
+
+  h3 {
+    font-size: 25px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  .hero {
+    padding-top: 110px;
+  }
+
+  .hero-details .hero-block {
+    padding: 40px 20px;
+  }
+
+  .circle-style {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card .card-title {
+    font-size: 25px;
+  }
+
+  .testimonials .owl-carousel .item {
+    max-width: 320px;
+    width: 320px;
+  }
+
+  .pt-116px {
+    padding-top: 50px;
+  }
+
+  .pb-80px {
+    padding-bottom: 50px;
+  }
+
+  .pb-120px {
+    padding-bottom: 40px;
+  }
+
+  .font-size-24px {
+    font-size: 20px !important;
+  }
+
+  .badge {
+    font-size: 14px !important;
+  }
+
+  .navbar {
+    padding: 20px 0;
+  }
+  .navbar .navbar-brand-img {
+    height: 20px;
+  }
+}
+@media (min-width: 1900px) {
+  .container {
+    max-width: 1480px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,107 @@
+$black: #000000;
+$silver: #F1F1F1;
+$darkgrey: #585858;
+$grey: #848484;
+$mediumpurple: #BF3EFE;
+$deepskyblue: #1B9EFF;
+$aliceblue: #F6F7FD;
+$white: #FFFFFF;
+$whitesmoke: #FCFCFC;
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
+.font-family-second {
+    font-family: 'Merriweather';
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 60px;
+    color: $white;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 45px;
+    color: $black;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 30px;
+    color: $black;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 30px;
+    color: $black;
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    color: $grey;
+}
+
+.shadow {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.02)!important;
+}
+
+.bg-linear-gradient {
+    background: linear-gradient(to right, $mediumpurple 10%, $deepskyblue 90%);
+}
+
+.bg-secondary {
+    background-color: $silver!important;
+}
+
+.pt-116px {
+    padding-top: 116px;
+}
+
+.pb-120px {
+    padding-bottom: 120px;
+}
+
+.pb-80px {
+    padding-bottom: 80px;
+}
+
+.font-size-30px {
+    font-size: 30px!important;
+}
+
+.font-size-24px {
+    font-size: 24px!important;
+}
+
+.font-size-16px {
+    font-size: 16px!important;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-secondary {
+    color: $darkgrey!important;
+}
+
+.text-muted {
+    color: $grey!important;
+}
+
+.text-dark {
+    color: $black!important;
+}
+
+.p-50px {
+    padding: 50px;
+}
+
+.rounded {
+    border-radius: 10px!important;
+}
+
+.rounded-pill {
+    border-radius: 40px!important;
+}
