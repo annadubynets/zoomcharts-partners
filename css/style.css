@@ -514,6 +514,27 @@ input {
   background: linear-gradient(90deg, #1B9EFF, #BF3EFE);
 }
 
+.page-item {
+  margin: 0 7px;
+}
+.page-item .page-link {
+  background-color: transparent;
+  color: #535353;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  padding: 7px 14px;
+}
+.page-item .page-link:focus {
+  box-shadow: none;
+}
+.page-item .page-link:hover, .page-item .page-link:focus {
+  border-color: #1B9EFF;
+}
+
+.page-item.disabled .page-link {
+  color: #E0E0E0;
+}
+
 @media (max-width: 992px) {
   h1 {
     font-size: 45px !important;
