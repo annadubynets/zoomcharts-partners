@@ -46,6 +46,19 @@ a {
     }
 }
 
+.btn-primary {
+    font-weight: normal;
+    font-size: 20px;
+    color: $white;
+    background: linear-gradient(to right, $mediumpurple 10%, $deepskyblue 90%);
+    border: none;
+    border-radius: 25px;
+    padding: 11px 50px;
+    &:hover {
+        box-shadow: 0 4px 16px 0 rgba(65, 132, 234, 0.75);
+    }
+}
+
 .btn-link {
     font-weight: normal;
     font-size: 20px;
@@ -207,7 +220,7 @@ input {
     }
     .hero-bg {
         width: 100%;
-        min-height: 20%;
+        min-height: 30vh;
         background: linear-gradient(to right, $mediumpurple 10%, $deepskyblue 90%);
         position: absolute;
         z-index: -1;
@@ -329,6 +342,8 @@ input {
 }
 
 .breadcrumb-item {
+    font-family: 'Roboto';
+    font-style: normal;
     font-size: 20px;
     a {
         color: $white;
@@ -368,7 +383,7 @@ input {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        &::after {
+        &.middle-line-decor::after {
             content: "";
             display: block;
             height: 3px;
@@ -377,7 +392,7 @@ input {
             position: absolute;
             top: 50%;
             left: 100%;
-            margin-left: 100%;
+            margin-left: 50%;
         }
     }
 }
@@ -401,7 +416,7 @@ input {
                 border-right: none;
                 border-top: none;
                 border-bottom: 5px solid;
-                border-image: linear-gradient(to right, $deepskyblue, $mediumpurple) 47% 0%;
+                border-image: linear-gradient(to right, $mediumpurple, $deepskyblue) 47% 0%;
             }
         }
     }
@@ -411,6 +426,8 @@ input {
     .nav-tabs {
         border-bottom: none;
         justify-content: center;
+        background-color: #F0F0F0;
+        border-radius: 25px;
         .nav-link {
             font-size: 20px;
             color: #B5B5B5;
@@ -423,7 +440,11 @@ input {
             }
             &.active {
                 color: $white;
-                background: linear-gradient(90deg, $deepskyblue, $mediumpurple);
+                background: linear-gradient(90deg, $mediumpurple, $deepskyblue);
+                border-color: transparent;
+                &:hover {
+                    box-shadow: 0 4px 16px 0 rgba(65, 132, 234, 0.75);
+                }
             }
         }
     }
@@ -449,6 +470,22 @@ input {
 
 .page-item.disabled .page-link {
     color: #E0E0E0;
+}
+
+.list-item {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-style: 300;
+    font-size: 20px;
+    color: $grey;
+    &.collapse:not(.show)~.shadow-decor {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 55px;
+        background: linear-gradient(90deg, rgba(255, 255, 255, .5) 80%, rgba(255, 255, 255, 1) 100%);
+    }
 }
 
 @media (max-width: 992px) {
@@ -495,7 +532,7 @@ input {
         }
         .circle-step {
             margin-bottom: 15px;
-            &::after {
+            &.middle-line-decor::after {
                 display: none;
             }
         }

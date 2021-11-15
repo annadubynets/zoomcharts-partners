@@ -51,10 +51,21 @@ p {
 
 .bg-linear-gradient {
     background: linear-gradient(to right, $mediumpurple 10%, $deepskyblue 90%);
+    &:hover {
+        box-shadow: 0 4px 16px 0 rgba(65, 132, 234, 0.75);
+    }
 }
 
 .bg-secondary {
-    background-color: $silver!important;
+    background-color: #F1F1F1!important;
+}
+
+.pt-58px {
+    padding-top: 58px;
+}
+
+.pt-86px {
+    padding-top: 86px;
 }
 
 .pt-116px {
@@ -71,6 +82,10 @@ p {
 
 .pb-80px {
     padding-bottom: 80px;
+}
+
+.mt-60px {
+    margin-top: 60px;
 }
 
 .mb-68px {
