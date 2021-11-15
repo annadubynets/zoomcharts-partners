@@ -96,6 +96,9 @@
 
 .icon-check:before {
     content: "\e907";
+    background: linear-gradient(50deg, #1B9EFF 0%, #C33EFE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .icon-arrow-next:before {
@@ -117,6 +120,9 @@
 
 .icon-checkbox:before {
     content: "\e904";
+    background: linear-gradient(50deg, #1B9EFF 0%, #C33EFE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .icon-quote:before {
@@ -128,5 +134,4 @@
 
 .icon-search:before {
     content: "\e906";
-    color: #585858;
 }

@@ -1,10 +1,9 @@
 $black: #000000;
-$silver: #F1F1F1;
+$silver: #CACACA;
 $darkgrey: #585858;
 $grey: #848484;
 $mediumpurple: #BF3EFE;
 $deepskyblue: #1B9EFF;
-$aliceblue: #F6F7FD;
 $white: #FFFFFF;
 $whitesmoke: #FCFCFC;
 $grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
@@ -30,9 +29,9 @@ h3 {
     color: $black;
 }
 
-h3 {
+h4 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     color: $black;
 }
 
@@ -44,6 +43,10 @@ p {
 
 .shadow {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.02)!important;
+}
+
+.shadow-sm {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16)!important;
 }
 
 .bg-linear-gradient {
@@ -62,8 +65,24 @@ p {
     padding-bottom: 120px;
 }
 
+.pb-60px {
+    padding-bottom: 60px;
+}
+
 .pb-80px {
     padding-bottom: 80px;
+}
+
+.mb-68px {
+    margin-bottom: 68px;
+}
+
+.mb-80px {
+    margin-bottom: 80px;
+}
+
+.mb-120px {
+    margin-bottom: 120px;
 }
 
 .font-size-30px {
@@ -74,12 +93,12 @@ p {
     font-size: 24px!important;
 }
 
-.font-size-16px {
-    font-size: 16px!important;
+.font-size-21px {
+    font-size: 21px!important;
 }
 
-.text-white {
-    color: $white;
+.font-size-16px {
+    font-size: 16px!important;
 }
 
 .text-secondary {
