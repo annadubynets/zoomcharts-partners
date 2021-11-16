@@ -659,6 +659,14 @@ input {
     }
 }
 
+@media (min-width: 992px) and (max-width: 1899px) {
+    .card {
+        .card-title {
+            font-size: 24px;
+        }
+    }
+}
+
 @media (min-width: 1900px) {
     .container {
         max-width: 1480px;
