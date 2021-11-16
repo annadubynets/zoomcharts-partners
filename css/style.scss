@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+.img-style {
+    opacity: 0.7;
+}
+
 .subtitle {
     font-family: 'Merriweather';
     font-weight: 300;
@@ -225,6 +229,23 @@ input {
         position: absolute;
         z-index: -1;
     }
+    .hero-bg-bottom {
+        width: 100%;
+        min-height: 60vh;
+        background: linear-gradient(to right, $mediumpurple 10%, $deepskyblue 90%);
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+    }
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
 }
 
 .partner-offer {
@@ -307,6 +328,9 @@ input {
     font-weight: bold;
     font-size: 25px;
     padding: 13px 40px;
+}
+
+.badge-container {
     top: -4%;
     right: 9%;
 }
@@ -364,6 +388,27 @@ input {
 }
 
 .steps {
+    .col {
+        &.middle-line-decor {
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                height: 3px;
+                width: 140px;
+                background: linear-gradient(90deg, $deepskyblue, $mediumpurple);
+                position: absolute;
+                top: 27px;
+                right: -70px;
+            }
+            @media (max-width: 1200px) {
+                &::after {
+                    width: 100px;
+                    right: -50px;
+                }
+            }
+        }
+    }
     .circle-step {
         width: 54px;
         height: 54px;
@@ -383,17 +428,6 @@ input {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        &.middle-line-decor::after {
-            content: "";
-            display: block;
-            height: 3px;
-            width: 150px;
-            background: linear-gradient(90deg, $deepskyblue, $mediumpurple);
-            position: absolute;
-            top: 50%;
-            left: 100%;
-            margin-left: 50%;
-        }
     }
 }
 
@@ -406,6 +440,7 @@ input {
             font-size: 25px;
             color: $grey;
             padding: 25px;
+            transition: none;
             &:focus,
             &:hover {
                 border-color: transparent;
@@ -433,7 +468,9 @@ input {
             color: #B5B5B5;
             background-color: transparent;
             border-radius: 25px;
+            text-align: center;
             padding: 11px 50px;
+            transition: none;
             &:focus,
             &:hover {
                 border-color: transparent;
@@ -475,7 +512,6 @@ input {
 .list-item {
     font-family: 'Merriweather';
     font-style: italic;
-    font-style: 300;
     font-size: 20px;
     color: $grey;
     &.collapse:not(.show)~.shadow-decor {
@@ -505,8 +541,19 @@ input {
     p {
         font-size: 16px!important;
     }
+    .list-item {
+        font-size: 16px!important;
+    }
     .hero {
         padding-top: 110px;
+    }
+    .hero-another {
+        .hero-bg {
+            width: 0;
+        }
+        .hero-block {
+            margin-top: 35px;
+        }
     }
     .partner-offer {
         .form-bg {
@@ -516,6 +563,18 @@ input {
             margin-top: 0;
             padding: 20px;
         }
+    }
+    .partner-block {
+        position: relative;
+        margin-top: -85px;
+    }
+    .badge-container {
+        top: -12%;
+        right: initial;
+        left: 50%;
+    }
+    .badge-featured {
+        margin-left: -50%;
     }
     .hero-details {
         .hero-block {
@@ -529,12 +588,14 @@ input {
     .steps {
         .col {
             flex: none;
+            &.middle-line-decor {
+                &::after {
+                    display: none;
+                }
+            }
         }
         .circle-step {
             margin-bottom: 15px;
-            &.middle-line-decor::after {
-                display: none;
-            }
         }
     }
     .nav {
@@ -586,6 +647,13 @@ input {
         padding: 20px 0;
         .navbar-brand-img {
             height: 20px;
+        }
+    }
+    .find-partner-tabs {
+        .nav-tabs {
+            .nav-link {
+                padding: 11px 22px;
+            }
         }
     }
 }

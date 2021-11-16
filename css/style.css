@@ -136,6 +136,10 @@ p {
   border-radius: 40px !important;
 }
 
+.z-index-1 {
+  z-index: 1;
+}
+
 body {
   font-family: "Roboto";
   background-color: #FCFCFC;
@@ -149,6 +153,10 @@ p {
 a {
   cursor: pointer;
   text-decoration: none;
+}
+
+.img-style {
+  opacity: 0.7;
 }
 
 .subtitle {
@@ -350,6 +358,23 @@ input {
   position: absolute;
   z-index: -1;
 }
+.hero-details .hero-bg-bottom {
+  width: 100%;
+  min-height: 60vh;
+  background: linear-gradient(to right, #BF3EFE 10%, #1B9EFF 90%);
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
 
 .partner-offer .form-bg {
   width: 100%;
@@ -423,6 +448,9 @@ input {
   font-weight: bold;
   font-size: 25px;
   padding: 13px 40px;
+}
+
+.badge-container {
   top: -4%;
   right: 9%;
 }
@@ -471,6 +499,25 @@ input {
   float: none;
 }
 
+.steps .col.middle-line-decor {
+  position: relative;
+}
+.steps .col.middle-line-decor::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 140px;
+  background: linear-gradient(90deg, #1B9EFF, #BF3EFE);
+  position: absolute;
+  top: 27px;
+  right: -70px;
+}
+@media (max-width: 1200px) {
+  .steps .col.middle-line-decor::after {
+    width: 100px;
+    right: -50px;
+  }
+}
 .steps .circle-step {
   width: 54px;
   height: 54px;
@@ -491,17 +538,6 @@ input {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.steps .circle-step.middle-line-decor::after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 150px;
-  background: linear-gradient(90deg, #1B9EFF, #BF3EFE);
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  margin-left: 50%;
-}
 
 .partner-tabs .nav-tabs {
   border-bottom: 5px solid #FCFCFC;
@@ -512,6 +548,7 @@ input {
   font-size: 25px;
   color: #848484;
   padding: 25px;
+  transition: none;
 }
 .partner-tabs .nav-tabs .nav-link:focus, .partner-tabs .nav-tabs .nav-link:hover {
   border-color: transparent;
@@ -536,7 +573,9 @@ input {
   color: #B5B5B5;
   background-color: transparent;
   border-radius: 25px;
+  text-align: center;
   padding: 11px 50px;
+  transition: none;
 }
 .find-partner-tabs .nav-tabs .nav-link:focus, .find-partner-tabs .nav-tabs .nav-link:hover {
   border-color: transparent;
@@ -574,7 +613,6 @@ input {
 .list-item {
   font-family: "Merriweather";
   font-style: italic;
-  font-style: 300;
   font-size: 20px;
   color: #848484;
 }
@@ -609,8 +647,19 @@ input {
     font-size: 16px !important;
   }
 
+  .list-item {
+    font-size: 16px !important;
+  }
+
   .hero {
     padding-top: 110px;
+  }
+
+  .hero-another .hero-bg {
+    width: 0;
+  }
+  .hero-another .hero-block {
+    margin-top: 35px;
   }
 
   .partner-offer .form-bg {
@@ -619,6 +668,21 @@ input {
   .partner-offer .form-block {
     margin-top: 0;
     padding: 20px;
+  }
+
+  .partner-block {
+    position: relative;
+    margin-top: -85px;
+  }
+
+  .badge-container {
+    top: -12%;
+    right: initial;
+    left: 50%;
+  }
+
+  .badge-featured {
+    margin-left: -50%;
   }
 
   .hero-details .hero-block {
@@ -633,11 +697,11 @@ input {
   .steps .col {
     flex: none;
   }
+  .steps .col.middle-line-decor::after {
+    display: none;
+  }
   .steps .circle-step {
     margin-bottom: 15px;
-  }
-  .steps .circle-step.middle-line-decor::after {
-    display: none;
   }
 
   .nav {
@@ -694,6 +758,10 @@ input {
   }
   .navbar .navbar-brand-img {
     height: 20px;
+  }
+
+  .find-partner-tabs .nav-tabs .nav-link {
+    padding: 11px 22px;
   }
 }
 @media (min-width: 1900px) {
