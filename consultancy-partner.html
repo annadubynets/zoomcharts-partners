@@ -156,36 +156,51 @@
                 <div class="col-lg-12 text-center">
                     <div class="form-block position-relative">
                         <h4 class="pb-60px">Fill in the form</h4>
-                        <form class="row justify-content-center">
+                        <form class="row justify-content-center needs-validation" novalidate>
                             <div class="col-lg-4 text-start pb-4">
-                                <label for="inputFirstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                                <label for="inputFirstName" class="form-label">First Name*</label>
+                                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" required>
+                                <div class="invalid-feedback">
+                                    This field is required
+                                </div>
                             </div>
                             <div class="col-lg-4 text-start pb-4">
-                                <label for="inputLastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                                <label for="inputLastName" class="form-label">Last Name*</label>
+                                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" required>
+                                <div class="invalid-feedback">
+                                    This field is required
+                                </div>
                             </div>
                             <div class="col-lg-8 text-start pb-4">
-                                <label for="inputEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                <label for="inputEmail" class="form-label">Email*</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    This field is required
+                                </div>
                             </div>
                             <div class="col-lg-8 text-start pb-4">
                                 <label for="inputPhoneNumber" class="form-label">Phone number</label>
                                 <input type="phone" class="form-control" id="inputPhoneNumber" placeholder="Phone number">
                             </div>
                             <div class="col-lg-8 text-start pb-4">
-                                <label for="inputCompany" class="form-label">Company</label>
-                                <input type="text" class="form-control" id="inputCompany" placeholder="Company">
+                                <label for="inputCompany" class="form-label">Company*</label>
+                                <input type="text" class="form-control" id="inputCompany" placeholder="Company" required>
+                                <div class="invalid-feedback">
+                                    This field is required
+                                </div>
                             </div>
                             <div class="col-lg-8 text-start pb-4">
                                 <label for="inputPosition" class="form-label">Position in the company*</label>
-                                <select id="inputPosition" class="selectpicker d-block" placeholder="Position in the company">
+                                <select id="inputPosition" class="selectpicker d-block" placeholder="Position in the company" required>
                                         <option>C-level</option>
                                         <option>Management</option>
                                         <option>Technical</option>
                                         <option>Sales</option>
                                         <option>Other</option>
-                                      </select>
+                                </select>
+                                <div class="invalid-feedback">
+                                    This field is required
+                                </div>
                             </div>
                             <div class="col-lg-8 text-start pb-4">
                                 <label for="inputWebsite" class="form-label">Website</label>
@@ -209,12 +224,12 @@
         </div>
     </section>
 
-    <script src="js/jquery-1.12.4.js "></script>
-    <script src="js/jquery-ui.js "></script>
-    <script src="js/bootstrap.bundle.min.js "></script>
-    <script src="js/bootstrap-select.min.js "></script>
-    <script src="js/owl.carousel.min.js "></script>
-    <script src="js/scripts.js "></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
