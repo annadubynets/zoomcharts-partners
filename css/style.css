@@ -772,8 +772,12 @@ input {
     height: 20px;
   }
 
+  .find-partner-tabs .nav-tabs {
+    border-radius: 37px;
+  }
   .find-partner-tabs .nav-tabs .nav-link {
     padding: 11px 22px;
+    border-radius: 37px;
   }
 }
 @media (min-width: 992px) and (max-width: 1899px) {
