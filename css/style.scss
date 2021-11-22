@@ -447,9 +447,9 @@ input {
             }
             &.active {
                 color: $black;
-                border-left: none;
-                border-right: none;
-                border-top: none;
+                border-left: 0;
+                border-right: 0;
+                border-top: 0;
                 border-bottom: 5px solid;
                 border-image: linear-gradient(to right, $mediumpurple, $deepskyblue) 47% 0%;
             }
@@ -716,6 +716,17 @@ input {
             .nav-link {
                 padding: 11px 22px;
                 border-radius: 37px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .partner-tabs {
+        .nav-tabs {
+            .nav-link {
+                font-size: 22px;
+                padding: 11px 22px;
             }
         }
     }

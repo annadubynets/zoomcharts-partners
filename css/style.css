@@ -543,9 +543,9 @@ input {
 }
 .partner-tabs .nav-tabs .nav-link.active {
   color: #000000;
-  border-left: none;
-  border-right: none;
-  border-top: none;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
   border-bottom: 5px solid;
   border-image: linear-gradient(to right, #BF3EFE, #1B9EFF) 47% 0%;
 }
@@ -809,6 +809,12 @@ input {
   .find-partner-tabs .nav-tabs .nav-link {
     padding: 11px 22px;
     border-radius: 37px;
+  }
+}
+@media (max-width: 375px) {
+  .partner-tabs .nav-tabs .nav-link {
+    font-size: 22px;
+    padding: 11px 22px;
   }
 }
 @media (min-width: 992px) and (max-width: 1899px) {
