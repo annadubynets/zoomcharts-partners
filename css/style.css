@@ -565,6 +565,7 @@ input {
   text-align: center;
   padding: 11px 50px;
   transition: none;
+  -webkit-appearance: none;
 }
 .find-partner-tabs .nav-tabs .nav-link:focus, .find-partner-tabs .nav-tabs .nav-link:hover {
   border-color: transparent;

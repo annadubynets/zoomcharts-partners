@@ -472,6 +472,7 @@ input {
             text-align: center;
             padding: 11px 50px;
             transition: none;
+            -webkit-appearance: none;
             &:focus,
             &:hover {
                 border-color: transparent;
