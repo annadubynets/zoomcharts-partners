@@ -548,6 +548,23 @@ input {
     background-image: none;
 }
 
+.read-more-btn {
+    .show-when-collapsed {
+        display: none;
+    }
+    .show-when-not-collapsed {
+        display: block;
+    }
+    &.collapsed {
+        .show-when-collapsed {
+            display: block;
+        }
+        .show-when-not-collapsed {
+            display: none;
+        }
+    }
+}
+
 @media (max-width: 992px) {
     h1 {
         font-size: 45px!important;

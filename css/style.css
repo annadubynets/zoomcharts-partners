@@ -611,7 +611,7 @@ input {
   right: 0;
   bottom: 0;
   height: 55px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 80%, white 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0, white 100%);
 }
 
 .invalid-feedback {
@@ -635,6 +635,19 @@ input {
 .was-validated .form-control:valid {
   border-color: #E2E2E2;
   background-image: none;
+}
+
+.read-more-btn .show-when-collapsed {
+  display: none;
+}
+.read-more-btn .show-when-not-collapsed {
+  display: block;
+}
+.read-more-btn.collapsed .show-when-collapsed {
+  display: block;
+}
+.read-more-btn.collapsed .show-when-not-collapsed {
+  display: none;
 }
 
 @media (max-width: 992px) {
