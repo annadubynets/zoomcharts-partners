@@ -81,4 +81,14 @@ $(function() {
                 form.classList.add('was-validated')
             }, false)
         })
+});
+
+// handling clickable links
+$(function() {
+    $(document).ready(() => {
+        $(document.body).on('click', '[data-clickable=true]', (e) => {
+            var href = $(e.currentTarget).data('url');
+            window.location = href;
+        });
+    });
 })

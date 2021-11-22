@@ -565,6 +565,26 @@ input {
     }
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
+// animations
+.wave-animation:hover {
+    transform: translateY(-10px);
+    animation-duration: 0.1s;
+    animation-name: wave-animation;
+}
+
+@keyframes wave-animation {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
 @media (max-width: 992px) {
     h1 {
         font-size: 45px!important;
