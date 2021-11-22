@@ -695,7 +695,8 @@ input {
     font-size: 16px !important;
   }
 
-  .btn-outline-primary {
+  .btn-outline-primary,
+.btn-link {
     font-size: 16px;
   }
 
