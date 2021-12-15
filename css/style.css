@@ -370,6 +370,12 @@ input {
 .navbar .navbar-brand {
   z-index: 1000;
 }
+.navbar .navbar-brand .when-scrolled {
+  display: none;
+}
+.navbar .navbar-brand .when-not-scrolled {
+  display: block;
+}
 @media (max-width: 992px) {
   .navbar .navbar-collapse {
     background-color: whitesmoke;
@@ -425,6 +431,15 @@ input {
 }
 .navbar.fixed-top.scrolled .nav-link {
   color: #FFFFFF;
+}
+.navbar.fixed-top.scrolled .navbar-brand img {
+  max-width: 143px;
+}
+.navbar.fixed-top.scrolled .navbar-brand .when-scrolled {
+  display: block;
+}
+.navbar.fixed-top.scrolled .navbar-brand .when-not-scrolled {
+  display: none;
 }
 
 .hero {

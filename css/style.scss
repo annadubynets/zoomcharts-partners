@@ -241,6 +241,14 @@ input {
     .navbar-brand {
         z-index: 1000;
     }
+    .navbar-brand {
+        .when-scrolled {
+            display: none;
+        }
+        .when-not-scrolled {
+            display: block;
+        }
+    }
     .navbar-collapse {
         @media (max-width: 992px) {
             &.show {
@@ -296,6 +304,17 @@ input {
     box-shadow: 0 4px 18px 0px rgb(0 0 0 / 12%), 0 7px 10px -5px rgb(0 0 0 / 15%);
     .nav-link {
         color: $white;
+    }
+    .navbar-brand {
+        img {
+            max-width: 143px;
+        }
+        .when-scrolled {
+            display: block;
+        }
+        .when-not-scrolled {
+            display: none;
+        }
     }
 }
 
