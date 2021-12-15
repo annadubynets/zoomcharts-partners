@@ -291,6 +291,14 @@ input {
     padding: 8px 16px;
 }
 
+.navbar.fixed-top.scrolled {
+    background-color: rgba(0, 0, 0, .9)!important;
+    box-shadow: 0 4px 18px 0px rgb(0 0 0 / 12%), 0 7px 10px -5px rgb(0 0 0 / 15%);
+    .nav-link {
+        color: $white;
+    }
+}
+
 .hero {
     background: linear-gradient(to right, $mediumpurple 10%, $deepskyblue 90%);
     padding-top: 132px;
