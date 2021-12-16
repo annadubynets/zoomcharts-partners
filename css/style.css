@@ -473,7 +473,7 @@ input {
 }
 @media (max-width: 992px) {
   .navbar .navbar-nav {
-    padding-top: 100px;
+    padding-top: 60px;
   }
 }
 
