@@ -99,3 +99,22 @@ $(function() {
         $nav.toggleClass('scrolled', $(this).scrollTop() > 0);
     });
 });
+
+$(function() {
+    var navbarCollapse = document.getElementById('navbarCollapse')
+    navbarCollapse.addEventListener('hide.bs.collapse', function(e) {
+        e.target.closest('.navbar').classList.remove('opened');
+    })
+
+    navbarCollapse.addEventListener('hidden.bs.collapse', function(e) {
+        e.target.closest('.navbar').classList.remove('opened');
+    })
+
+    navbarCollapse.addEventListener('show.bs.collapse', function(e) {
+        e.target.closest('.navbar').classList.add('opened');
+    })
+
+    navbarCollapse.addEventListener('shown.bs.collapse', function(e) {
+        e.target.closest('.navbar').classList.add('opened');
+    })
+})

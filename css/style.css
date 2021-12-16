@@ -376,6 +376,12 @@ input {
 .navbar .navbar-brand .when-not-scrolled {
   display: block;
 }
+.navbar .navbar-toggler .when-scrolled {
+  display: none;
+}
+.navbar .navbar-toggler .when-not-scrolled {
+  display: block;
+}
 @media (max-width: 992px) {
   .navbar .navbar-collapse {
     background-color: whitesmoke;
@@ -417,6 +423,59 @@ input {
     margin-bottom: auto;
   }
 }
+.navbar .full-screen-dropdown .dropdown-menu {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+  top: 88px;
+  padding-top: 66px;
+  border: 0;
+}
+@media (max-width: 992px) {
+  .navbar .full-screen-dropdown .dropdown-menu {
+    position: relative;
+    top: 0;
+    padding-top: 0;
+    background-color: transparent;
+  }
+}
+.navbar .full-screen-dropdown .icon {
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+}
+.navbar .full-screen-dropdown .icon svg {
+  fill: #666;
+}
+.navbar .full-screen-dropdown .list-items {
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+.navbar .full-screen-dropdown .list-items li {
+  padding: 5px 0;
+}
+.navbar .full-screen-dropdown .list-items li a {
+  font-size: 12px;
+  color: #848484;
+}
+.navbar .full-screen-dropdown .list-inline-items {
+  padding-left: 0;
+}
+.navbar .full-screen-dropdown .list-inline-items li {
+  display: inline-block;
+}
+.navbar .full-screen-dropdown .list-inline-items li a {
+  font-size: 12px;
+  color: #848484;
+  padding: 0 15px;
+}
+@media (max-width: 992px) {
+  .navbar .navbar-nav {
+    padding-top: 100px;
+  }
+}
 
 .navbar-light .navbar-nav .nav-link {
   font-weight: 600;
@@ -440,6 +499,29 @@ input {
 }
 .navbar.fixed-top.scrolled .navbar-brand .when-not-scrolled {
   display: none;
+}
+.navbar.fixed-top.scrolled .navbar-toggler .when-scrolled {
+  display: block;
+}
+.navbar.fixed-top.scrolled .navbar-toggler .when-not-scrolled {
+  display: none;
+}
+@media (max-width: 992px) {
+  .navbar.fixed-top.scrolled.opened .nav-link {
+    color: #000000;
+  }
+  .navbar.fixed-top.scrolled.opened .navbar-toggler .when-scrolled {
+    display: none;
+  }
+  .navbar.fixed-top.scrolled.opened .navbar-toggler .when-not-scrolled {
+    display: block;
+  }
+  .navbar.fixed-top.scrolled.opened .navbar-brand .when-scrolled {
+    display: none;
+  }
+  .navbar.fixed-top.scrolled.opened .navbar-brand .when-not-scrolled {
+    display: block;
+  }
 }
 
 .hero {
