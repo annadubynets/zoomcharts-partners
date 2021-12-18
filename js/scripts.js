@@ -103,18 +103,18 @@ $(function() {
 $(function() {
     var navbarCollapse = document.getElementById('navbarCollapse')
     navbarCollapse.addEventListener('hide.bs.collapse', function(e) {
-        e.target.closest('.navbar').classList.remove('opened');
+        e.target.closest('html').classList.remove('nav-opened');
     })
 
     navbarCollapse.addEventListener('hidden.bs.collapse', function(e) {
-        e.target.closest('.navbar').classList.remove('opened');
+        e.target.closest('html').classList.remove('nav-opened');
     })
 
     navbarCollapse.addEventListener('show.bs.collapse', function(e) {
-        e.target.closest('.navbar').classList.add('opened');
+        e.target.closest('html').classList.add('nav-opened');
     })
 
     navbarCollapse.addEventListener('shown.bs.collapse', function(e) {
-        e.target.closest('.navbar').classList.add('opened');
+        e.target.closest('html').classList.add('nav-opened');
     })
 })
