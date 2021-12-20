@@ -12199,6 +12199,9 @@ p {
   html.nav-opened .navbar .navbar-brand .when-not-scrolled {
     display: none;
   }
+  html.nav-opened .navbar .navbar-brand img {
+    max-width: 143px;
+  }
 }
 .navbar-light .navbar-nav .nav-link {
   font-weight: 600;
