@@ -11956,14 +11956,6 @@ p {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 991px) {
-  html.nav-opened {
-    overflow: hidden;
-  }
-  html.nav-opened .navbar .navbar-collapse {
-    overflow-y: auto;
-  }
-}
 .navbar {
   padding: 23px 0;
   background: #FFFFFF;
@@ -12187,21 +12179,27 @@ p {
     top: 0;
   }
 }
+
 @media (max-width: 991px) {
-  .navbar.opened .navbar-toggler .when-scrolled {
-    display: none;
+  html.nav-opened {
+    overflow: hidden;
   }
-  .navbar.opened .navbar-toggler .when-not-scrolled {
+  html.nav-opened .navbar .navbar-collapse {
+    overflow-y: auto;
+  }
+  html.nav-opened .navbar .navbar-toggler .when-scrolled {
     display: block;
   }
-  .navbar.opened .navbar-brand .when-scrolled {
+  html.nav-opened .navbar .navbar-toggler .when-not-scrolled {
     display: none;
   }
-  .navbar.opened .navbar-brand .when-not-scrolled {
+  html.nav-opened .navbar .navbar-brand .when-scrolled {
     display: block;
+  }
+  html.nav-opened .navbar .navbar-brand .when-not-scrolled {
+    display: none;
   }
 }
-
 .navbar-light .navbar-nav .nav-link {
   font-weight: 600;
   font-size: 12px;
